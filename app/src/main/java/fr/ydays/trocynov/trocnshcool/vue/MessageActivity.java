@@ -1,4 +1,4 @@
-package fr.ydays.trocynov.trocnshcool;
+package fr.ydays.trocynov.trocnshcool.vue;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,7 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class ProfilActivity extends AppCompatActivity {
+import fr.ydays.trocynov.trocnshcool.R;
+
+public class MessageActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
 
@@ -34,7 +36,7 @@ public class ProfilActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profil);
+        setContentView(R.layout.activity_message);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

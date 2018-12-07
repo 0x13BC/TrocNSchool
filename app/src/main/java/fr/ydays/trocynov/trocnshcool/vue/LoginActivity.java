@@ -1,4 +1,4 @@
-package fr.ydays.trocynov.trocnshcool;
+package fr.ydays.trocynov.trocnshcool.vue;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -31,6 +31,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import fr.ydays.trocynov.trocnshcool.R;
+
+
+
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -67,8 +72,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
+
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
-        populateAutoComplete();
+     /*   populateAutoComplete();*/
 
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
