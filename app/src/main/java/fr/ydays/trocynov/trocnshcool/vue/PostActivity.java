@@ -1,5 +1,6 @@
 package fr.ydays.trocynov.trocnshcool.vue;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -21,17 +22,63 @@ public class PostActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
+                    openDEDActivity();
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_profile:
                     mTextMessage.setText(R.string.title_dashboard);
+                    openPrActivity();
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_post:
+                    mTextMessage.setText(R.string.title_activity_post);
+                    openPoActivity();
+                    return true;
+                case R.id.navigation_message:
+                    mTextMessage.setText(R.string.title_activity_message);
+                    openMActivity();
+                    return true;
+                case R.id.navigation_notification:
                     mTextMessage.setText(R.string.title_notifications);
+                    openNActivity();
                     return true;
             }
             return false;
         }
     };
+
+    public void openDEDActivity(){
+        Intent intent = new Intent(this,DonEtDemandeActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
+
+    public void openMActivity(){
+        Intent intent = new Intent(this,MessageActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
+
+    public void openNActivity(){
+        Intent intent = new Intent(this,NotifActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
+
+    public void openPoActivity(){
+        Intent intent = new Intent(this,PostActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
+
+    public void openPrActivity(){
+        Intent intent = new Intent(this,ProfilActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +88,7 @@ public class PostActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation.setSelectedItemId(R.id.navigation_post);
     }
 
 }

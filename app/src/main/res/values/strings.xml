@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">TrocNShcool</string>
+
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard">Profile</string>
     <string name="title_notifications">Notifications</string>
-    <string name="title_activity_message">MessageActivity</string>
-    <string name="title_activity_post">PostActivity</string>
-    <string name="title_activity_notif">NotifActivity</string>
-    <string name="title_activity_profil">ProfilActivity</string>
+    <string name="title_activity_message">Messages</string>
+    <string name="title_activity_post">Post</string>
+    <string name="title_activity_notif">Notification</string>
+    <string name="title_activity_profil">Profile</string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
