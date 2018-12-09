@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TrocNSchool.iml" filepath="$PROJECT_DIR$/TrocNSchool.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TrocNSchool.iml" filepath="$PROJECT_DIR$/TrocNSchool.iml" />
       <module fileurl="file://$PROJECT_DIR$/TrocNShcool.iml" filepath="$PROJECT_DIR$/TrocNShcool.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
