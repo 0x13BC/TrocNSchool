@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "270209655059",
+    "firebase_url": "https://trocynov.firebaseio.com",
+    "project_id": "trocynov",
+    "storage_bucket": "trocynov.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270209655059:android:7fce39850dc828ad",
+        "android_client_info": {
+          "package_name": "fr.ydays.trocynov.trocnshcool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270209655059-r9e9bbsj5rap6tfao5n4rqll85ddmdck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.ydays.trocynov.trocnshcool",
+            "certificate_hash": "b8054b41d892ffe12070942ef58f2fb48d7a0039"
+          }
+        },
+        {
+          "client_id": "270209655059-he15dmcfk1qkb6hekbn13dvu79nvumjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.ydays.trocynov.trocnshcool",
+            "certificate_hash": "5cc3740a91aa0ee3aca41d48e7ab35d484d31e76"
+          }
+        },
+        {
+          "client_id": "270209655059-2so8p342ufs3l2icvi9ooa64n6fl4vem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOrVTgkxt4-Xd08I0DohsTXQn4msh9yf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270209655059-2so8p342ufs3l2icvi9ooa64n6fl4vem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

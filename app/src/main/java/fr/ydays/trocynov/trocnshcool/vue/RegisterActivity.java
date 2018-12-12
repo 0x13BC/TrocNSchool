@@ -62,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(RegisterActivity.this,"Enregistrement du compte",Toast.LENGTH_LONG).show();
         }
         else if (Password.equals(ConfPassword))
-            Toast.makeText(RegisterActivity.this,"Mot de passe trop court! Minimum 6 caracteres",Toast.LENGTH_LONG).show();
+            Toast.makeText(RegisterActivity.this,"Mot de passe trop court! Minimum 7 caracteres",Toast.LENGTH_LONG).show();
         else
             Toast.makeText(RegisterActivity.this,"Mot de passe différent",Toast.LENGTH_LONG).show();
 }

@@ -12,12 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
         android:ems="10"
         android:hint="Nom"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,13 +72,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="13dp"
         android:layout_marginEnd="60dp"
         android:text="S'enregistrer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextConfPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonConditions" />
 
     <EditText
         android:id="@+id/editTextPrenom"
@@ -87,9 +88,24 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="60dp"
         android:ems="10"
-        android:hint="Prenom"
+        android:hint="Prénom"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNom" />
+
+    <RadioButton
+        android:id="@+id/radioButtonConditions"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:checked="false"
+        android:clickable="true"
+        android:text="Conditions d'utilisation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfPassword" />
 </android.support.constraint.ConstraintLayout>
