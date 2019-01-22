@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".vue.DonEtDemandeActivity"
+            android:name=".vue.LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,14 +37,11 @@
             android:name=".vue.ProfilActivity"
             android:label="@string/title_activity_profil" />
         <activity
-            android:name=".vue.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".vue.RegisterActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".vue.DonEtDemandeActivity"
+            android:label="@string/title_dashboard" />
+        <activity
+            android:name=".vue.RegisterActivity">
+            android:label="Register"
         </activity>
     </application>
 
