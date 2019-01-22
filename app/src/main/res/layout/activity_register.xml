@@ -96,16 +96,16 @@
 
     <RadioButton
         android:id="@+id/radioButtonConditions"
-        android:layout_width="273dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="60dp"
         android:checked="false"
-        android:clickable="true"
+        android:focusable="auto"
         android:text="Conditions d'utilisation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextConfPassword" />
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package fr.ydays.trocynov.trocnshcool.vue;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -60,6 +61,10 @@ public class RegisterActivity extends AppCompatActivity {
             Users user = new Users(id, Nom, Prenom, Email, Password);
             databaseUsers.child(id).setValue(user);
             Toast.makeText(RegisterActivity.this,"Enregistrement du compte",Toast.LENGTH_LONG).show();
+            //Intent intent= new Intent(this,DonEtDemandeActivity);
+
+
+
         }
         else if (Password.equals(ConfPassword))
             Toast.makeText(RegisterActivity.this,"Mot de passe trop court! Minimum 7 caracteres",Toast.LENGTH_LONG).show();
