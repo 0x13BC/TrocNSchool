@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import fr.ydays.trocynov.trocnshcool.MainActivity;
 import fr.ydays.trocynov.trocnshcool.R;
 import okhttp3.HttpUrl;
 
@@ -113,7 +114,7 @@ public class LoginActivity extends BaseActivity{
     }
 
     private void startMainActivity(){
-        Intent intent = new Intent(LoginActivity.this, ProfilActivity.class);////////
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);////////
         startActivity(intent);
         finish();
     }

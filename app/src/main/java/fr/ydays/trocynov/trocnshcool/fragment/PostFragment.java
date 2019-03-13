@@ -1,4 +1,4 @@
-package fr.ydays.trocynov.trocnshcool;
+package fr.ydays.trocynov.trocnshcool.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,11 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class NotificationsFragment extends Fragment {
+import fr.ydays.trocynov.trocnshcool.R;
+
+public class PostFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_notifications,container,false);
+        return inflater.inflate(R.layout.fragment_post,container,false);
     }
 }

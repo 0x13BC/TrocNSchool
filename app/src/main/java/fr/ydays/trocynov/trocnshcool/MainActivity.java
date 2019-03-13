@@ -7,6 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import fr.ydays.trocynov.trocnshcool.fragment.DonEtDemandeFragment;
+import fr.ydays.trocynov.trocnshcool.fragment.MessagesFragment;
+import fr.ydays.trocynov.trocnshcool.fragment.NotificationsFragment;
+import fr.ydays.trocynov.trocnshcool.fragment.PostFragment;
+import fr.ydays.trocynov.trocnshcool.fragment.ProfileFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
