@@ -1,5 +1,460 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="446dp"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="335dp"
+        android:text="Tag,Tag,Tag"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="335dp"
+        android:text="Titre"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="-3dp"
+        android:layout_marginBottom="-333dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="ville date"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-335dp"
+        android:text="Description  Lorem ipsum do..."
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="341dp"
+        android:layout_toEndOf="@+id/textView11"
+        app:srcCompat="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-269dp"
+        android:text="Description  Lorem ipsum do..."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="-4dp"
+        android:layout_marginBottom="-268dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="ville date"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="269dp"
+        android:text="Titre"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="380dp"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-204dp"
+        android:text="Description  Lorem ipsum do..."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="-203dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="ville date"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="204dp"
+        android:text="Titre"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="315dp"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="-137dp"
+        android:text="Description  Lorem ipsum do..."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="-3dp"
+        android:layout_marginBottom="-136dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="ville date"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="137dp"
+        android:text="Titre"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="248dp"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="183dp"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="72dp"
+        android:text="Tag,Tag,Tag"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="137dp"
+        android:text="Tag,Tag,Tag"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="204dp"
+        android:text="Tag,Tag,Tag"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="269dp"
+        android:text="Tag,Tag,Tag"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-72dp"
+        android:text="Description  Lorem ipsum do..."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="72dp"
+        android:text="Titre"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="-4dp"
+        android:layout_marginBottom="-71dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="ville date"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Don"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:text="Demande"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <SearchView
+        android:layout_width="146dp"
+        android:layout_height="27dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-47dp"
+        android:layout_marginTop="73dp" >
+
+    </SearchView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Mots clés"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="76dp"
+        android:text="Tag 1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="77dp"
+        android:text="Tag2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="111dp"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="0dp"
+        android:text="Titre"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="ville date"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Description  Lorem ipsum do..."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Tag,Tag,Tag"
+        android:textSize="8sp" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/textView11"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="81dp"
+        android:layout_toEndOf="@+id/textView11"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="148dp"
+        android:layout_toEndOf="@+id/textView11"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="213dp"
+        android:layout_toEndOf="@+id/textView11"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="275dp"
+        android:layout_toEndOf="@+id/textView11"
+        app:srcCompat="@color/colorPrimary" />
 
 </RelativeLayout>
