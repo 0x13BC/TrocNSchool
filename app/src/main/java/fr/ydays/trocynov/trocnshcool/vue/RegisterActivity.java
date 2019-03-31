@@ -1,28 +1,18 @@
 package fr.ydays.trocynov.trocnshcool.vue;
 
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telecom.Call;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.io.IOException;
-
 import fr.ydays.trocynov.trocnshcool.R;
-import fr.ydays.trocynov.trocnshcool.modele.Users;
 
 import okhttp3.HttpUrl;
-import okhttp3.OkHttpClient;
 
 
 public class RegisterActivity extends BaseActivity {
@@ -74,6 +64,7 @@ public class RegisterActivity extends BaseActivity {
         }
     }
 
+    @Override
     Runnable responseRunnable(final String responseStr) {
         Runnable resRunnable = new Runnable() {
             public void run() {
@@ -96,14 +87,14 @@ public class RegisterActivity extends BaseActivity {
     }
 
     private HttpUrl.Builder prepareRegRequestBuilder(String Nom, String Prenom, String Email, String Password) {
-        HttpUrl.Builder httpBuider =
+        HttpUrl.Builder httpBuilder =
                 HttpUrl.parse(FIREBASE_CLOUD_FUNCTION_REG_URL).newBuilder();
-        httpBuider.addQueryParameter("name", Nom);
-        httpBuider.addQueryParameter("firstName", Prenom);
-        httpBuider.addQueryParameter("email", Email);
-        httpBuider.addQueryParameter("password", Password);
-        Log.e("TAG", httpBuider.toString());
-        return httpBuider;
+        httpBuilder.addQueryParameter("name", Nom);
+        httpBuilder.addQueryParameter("firstName", Prenom);
+        httpBuilder.addQueryParameter("email", Email);
+        httpBuilder.addQueryParameter("password", Password);
+        Log.e("TAG", httpBuilder.toString());
+        return httpBuilder;
     }
 
 }

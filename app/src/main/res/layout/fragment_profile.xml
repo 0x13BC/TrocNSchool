@@ -77,7 +77,7 @@
         android:text="Option" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/info_sup_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
@@ -129,10 +129,13 @@
     <Button
         android:id="@+id/disconnect_button"
         style="?android:textAppearanceSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
         android:text="@string/action_disconnect"
+        android:textSize="8sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

@@ -17,6 +17,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+//    sourceSets {
+//        main {
+//            res.srcDirs =
+//                    [
+//                            'src/main/res/layouts/profile',
+//                            'src/main/res/layout',
+//                            'src/main/res'
+//                    ]
+//        }
+//    }
 }
 
 dependencies {
@@ -31,6 +41,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.5'
     implementation 'com.google.firebase:firebase-core:16.0.6'
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+
+
 
 
 }

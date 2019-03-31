@@ -7,27 +7,41 @@ import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+
 
 import fr.ydays.trocynov.trocnshcool.R;
 import fr.ydays.trocynov.trocnshcool.vue.LoginActivity;
-import fr.ydays.trocynov.trocnshcool.vue.ProfilActivity;
 
-public class ProfileFragment extends Fragment  {
+public class ProfileFragment extends Fragment implements View.OnClickListener{
+
+
+    private View view;
+    private Fragment fragmentNext;
+    private Button AvisButton;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_profile,container,false);
+
+        view = inflater.inflate(R.layout.fragment_profile,container,false);
+
+        AvisButton = (Button) view.findViewById(R.id.button7);
+
+        AvisButton.setOnClickListener(this);
+
+        return view;
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button disconnectButton = (Button) getView().findViewById(R.id.disconnect_button);
+        Button InfoSup = (Button) getView().findViewById(R.id.info_sup_button);
 
         disconnectButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +50,38 @@ public class ProfileFragment extends Fragment  {
                 jumpToLogin();
             }
         });
+
+
+
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new InfoSupFragment()).commit();
         // or  (ImageView) view.findViewById(R.id.foo);
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        Fragment fragment = null;
+        FragmentTransaction fragmentManager= getFragmentManager().beginTransaction();
+
+        switch (view.getId()) {
+            case R.id.button7:
+
+                fragment = new AvisFragment();
+                replaceFragment(fragment);
+                break;
+
+            case R.id.button6:
+                fragment = new HistoricFragment();
+                replaceFragment(fragment);
+                break;
+        }
+    }
+
+    public void replaceFragment(Fragment someFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, someFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
 
@@ -57,4 +102,5 @@ public class ProfileFragment extends Fragment  {
         editor.commit();
 
     }
+
 }

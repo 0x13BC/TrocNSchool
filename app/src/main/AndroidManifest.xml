@@ -27,24 +27,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".vue.MessageActivity"
-            android:label="@string/title_activity_message" />
-        <activity
-            android:name=".vue.PostActivity"
-            android:label="@string/title_activity_post" />
-        <activity
-            android:name=".vue.NotifActivity"
-            android:label="@string/title_activity_notif" />
-        <activity
-            android:name=".vue.ProfilActivity"
-            android:label="@string/title_activity_profil" />
-        <activity
-            android:name=".vue.DonEtDemandeActivity"
-            android:label="@string/title_dashboard" />
-        <activity
             android:name=".vue.RegisterActivity"
             android:label="Register"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".vue.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

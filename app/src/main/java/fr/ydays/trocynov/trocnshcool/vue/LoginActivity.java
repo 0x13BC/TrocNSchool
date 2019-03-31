@@ -14,14 +14,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import fr.ydays.trocynov.trocnshcool.MainActivity;
 import fr.ydays.trocynov.trocnshcool.R;
 import okhttp3.HttpUrl;
 
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends BaseActivity{
+public class LoginActivity extends BaseActivity {
 
     private static final String TAG = "LoginActivity";
 
@@ -121,7 +120,7 @@ public class LoginActivity extends BaseActivity{
 
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+        return email.contains("@ynov.com");
     }
 
     private boolean isPasswordValid(String password) {
