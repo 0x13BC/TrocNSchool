@@ -23,7 +23,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
 
     private View view;
     private Fragment fragmentNext;
-    private Button AvisButton;
+    private Button AvisButton, HistoricButton,ParameterButton,InfoButton;
 
     @Nullable
     @Override
@@ -31,9 +31,17 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
 
         view = inflater.inflate(R.layout.fragment_profile,container,false);
 
-        AvisButton = (Button) view.findViewById(R.id.button7);
-
+        AvisButton = (Button) view.findViewById(R.id.avis_button);
         AvisButton.setOnClickListener(this);
+
+        HistoricButton = (Button) view.findViewById(R.id.historic_button);
+        HistoricButton.setOnClickListener(this);
+
+        ParameterButton = (Button) view.findViewById(R.id.parameter_button);
+        ParameterButton.setOnClickListener(this);
+
+        InfoButton = (Button) view.findViewById(R.id.info_sup_button);
+        InfoButton.setOnClickListener(this);
 
         return view;
     }
@@ -64,14 +72,24 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
         FragmentTransaction fragmentManager= getFragmentManager().beginTransaction();
 
         switch (view.getId()) {
-            case R.id.button7:
+            case R.id.avis_button:
 
                 fragment = new AvisFragment();
                 replaceFragment(fragment);
                 break;
 
-            case R.id.button6:
+            case R.id.historic_button:
                 fragment = new HistoricFragment();
+                replaceFragment(fragment);
+                break;
+
+            case R.id.parameter_button:
+                fragment = new ParameterFragment();
+                replaceFragment(fragment);
+                break;
+
+            case R.id.info_sup_button:
+                fragment = new InfoSupFragment();
                 replaceFragment(fragment);
                 break;
         }

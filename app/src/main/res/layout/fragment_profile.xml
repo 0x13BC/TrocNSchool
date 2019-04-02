@@ -66,14 +66,15 @@
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis lacinia diam id interdum. Etiam dictum velit nisi, eget egestas ante vulputate at. Mauris blandit quis elit nec finibus. Donec blandit, eros id rhoncus rutrum, nulla justo malesuada nulla, eu pulvinar orci enim at quam. Phasellus quam mi, blandit id sagittis eget, pellentesque sit amet dui. Morbi congue diam neque, sed bibendum sapien feugiat eu. Sed elementum tortor odio, non maximus leo molestie quis. Cras sagittis cursus tempor. Cras imperdiet nisl enim, eget interdum massa porttitor nec. Duis tempus vehicula sapien, nec tempor tellus." />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/parameter_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginStart="-136dp"
         android:layout_marginBottom="18dp"
-        android:layout_centerInParent="true"
         android:text="Option" />
 
     <Button
@@ -88,18 +89,19 @@
         android:text="Informations supplémentaires" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/historic_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginStart="-136dp"
         android:layout_marginBottom="102dp"
-        android:layout_centerInParent="true"
         android:text="Historique" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/avis_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
