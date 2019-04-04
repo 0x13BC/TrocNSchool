@@ -41,29 +41,9 @@
         android:layout_alignBottom="@+id/imageView"
         android:layout_alignParentStart="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="-103dp"
         android:text="300 Toques" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="189dp"
-        android:text="Description:" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="97dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="4dp"
-        android:layout_centerInParent="true"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis lacinia diam id interdum. Etiam dictum velit nisi, eget egestas ante vulputate at. Mauris blandit quis elit nec finibus. Donec blandit, eros id rhoncus rutrum, nulla justo malesuada nulla, eu pulvinar orci enim at quam. Phasellus quam mi, blandit id sagittis eget, pellentesque sit amet dui. Morbi congue diam neque, sed bibendum sapien feugiat eu. Sed elementum tortor odio, non maximus leo molestie quis. Cras sagittis cursus tempor. Cras imperdiet nisl enim, eget interdum massa porttitor nec. Duis tempus vehicula sapien, nec tempor tellus." />
 
     <Button
         android:id="@+id/parameter_button"
@@ -71,10 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="-136dp"
-        android:layout_marginBottom="18dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-133dp"
+        android:layout_marginBottom="81dp"
         android:text="Option" />
 
     <Button
@@ -83,9 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-135dp"
-        android:layout_marginBottom="59dp"
         android:layout_centerInParent="true"
+        android:layout_marginStart="-133dp"
+        android:layout_marginBottom="243dp"
         android:text="Informations supplémentaires" />
 
     <Button
@@ -94,10 +73,9 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="-136dp"
-        android:layout_marginBottom="102dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-133dp"
+        android:layout_marginBottom="185dp"
         android:text="Historique" />
 
     <Button
@@ -106,8 +84,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView2"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-136dp"
-        android:layout_marginBottom="149dp"
+        android:layout_marginStart="-133dp"
+        android:layout_marginBottom="133dp"
         android:text="Avis" />
 
     <ImageView
@@ -123,9 +101,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
         android:text="Pseudonyme" />
 
     <Button
@@ -133,9 +112,10 @@
         style="?android:textAppearanceSmall"
         android:layout_width="61dp"
         android:layout_height="65dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="40dp"
         android:text="@string/action_disconnect"
         android:textSize="8sp"
         android:textStyle="bold" />

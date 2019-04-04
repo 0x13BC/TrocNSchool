@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TrocNShcool</string>
+    <string name="app_name">TrocNSchool</string>
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Profile</string>
@@ -28,4 +28,29 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Strings related to PostFragment-->
+    <string-array name="poster">
+        <item>Don</item>
+        <item>Demande</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Toute catégorie</item>
+        <item>Accessoires</item>
+        <item>Chaussures</item>
+        <item>Electroménager</item>
+        <item>Electronique</item>
+        <item>Equipements</item>
+        <item>Jeux vidéos</item>
+        <item>Vêtements</item>
+        <item>Meubles</item>
+        <item>Sport</item>
+        <item>Livre, CD , DVD</item>
+        <item>Véhicules</item>
+        <item>Cours</item>
+
+    </string-array>
+
 </resources>

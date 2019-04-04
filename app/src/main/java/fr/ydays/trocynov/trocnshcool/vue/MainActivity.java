@@ -6,9 +6,8 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-
+import android.support.v7.widget.Toolbar;
 import fr.ydays.trocynov.trocnshcool.R;
-import fr.ydays.trocynov.trocnshcool.fragment.AvisFragment;
 import fr.ydays.trocynov.trocnshcool.fragment.DonEtDemandeFragment;
 import fr.ydays.trocynov.trocnshcool.fragment.MessagesFragment;
 import fr.ydays.trocynov.trocnshcool.fragment.NotificationsFragment;
@@ -21,7 +20,8 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+       // Toolbar toolbar=findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
         BottomNavigationView bottomNav = findViewById( R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <ImageView
+        android:id="@+id/logoXmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:adjustViewBounds="true"
+        android:src="@drawable/launcher_icon_round_small_2" />
+    <ImageView
+        android:id="@+id/logoXmarks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/trocynov_small" />
+
+</android.support.v7.widget.Toolbar>

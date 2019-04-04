@@ -49,7 +49,6 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Button disconnectButton = (Button) getView().findViewById(R.id.disconnect_button);
-        Button InfoSup = (Button) getView().findViewById(R.id.info_sup_button);
 
         disconnectButton.setOnClickListener(new View.OnClickListener() {
             @Override
